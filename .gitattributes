@@ -1,0 +1,9 @@
+* text=auto eol=lf
+*.py text
+*.md text
+*.json text
+*.csv text
+*.SchDoc -text
+*.PcbDoc -text
+*.SchLib -text
+*.IntLib -text

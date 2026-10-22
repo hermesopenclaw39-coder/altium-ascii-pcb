@@ -1,0 +1,8 @@
+__pycache__/
+*.py[cod]
+*.bak
+*.bak_fp
+*.bak_place
+*.zip
+.DS_Store
+Thumbs.db

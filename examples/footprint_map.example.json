@@ -1,0 +1,18 @@
+{
+  "Resistor": "AXIAL-0.4",
+  "Capacitor": "RAD-0.1",
+  "Capacitor_Polarized": "CAPPR5-5x5",
+  "Zener": "DO-35",
+  "NPN": "TO-92",
+  "PNP": "TO-92",
+  "741_DIP8": "DIP-8",
+  "Op Amp": "DIP-8",
+  "TestPoint": "PIN1",
+  "Potentiometer": "VR3",
+  "Header2": "HDR1X2",
+  "Header3": "HDR1X3",
+  "NE555P": "DIP-8",
+  "Volt Reg": "TO-220AB",
+  "Bridge1": "DB008",
+  "Trans Cupl": "TRF_4"
+}
