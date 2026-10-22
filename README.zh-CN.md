@@ -161,7 +161,7 @@ python tests/test_examples.py
 
 中文 Windows 的 GBK 控制台请先 `set PYTHONIOENCODING=utf-8`，否则中文输出会是乱码。
 
-会在临时目录里对 `examples/` 下的最小原理图和 PCB 依次跑四个脚本，并检查批量加封装后复检为"封装完整"、重复运行不会重复插入。`examples/minimal.*` 是**手写的最小样例**，只用于测试解析逻辑，不保证能直接用 AD 打开；`examples/analog-reference.SchDoc` 则是**真实的 AD 6.7 导出文件**（94 个元件，姓名和学号已去掉），AD 能正常打开，测试里也会把它完整跑一遍。自己的项目请用 AD `Save As → ASCII` 导出。
+会在临时目录里对 `examples/` 下的最小原理图和 PCB 依次跑四个脚本，并检查批量加封装后复检为"封装完整"、重复运行不会重复插入。`examples/` 里的两个文件是**手写的最小样例**，只用于演示和测试脚本，不保证能直接用 AD 打开；实际使用请用 AD `Save As → ASCII` 导出的文件。
 
 ## 支持版本
 
