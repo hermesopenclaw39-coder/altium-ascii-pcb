@@ -75,6 +75,12 @@ def main():
         out = run('pcb_inspect.py', pcb)
         assert '元件出板: 无' in out, out
         print('ok  pcb_place + 复检：无元件出板')
+        # 真实 AD 6.7 导出文件（已匿名化）：解析器必须能处理
+        real = os.path.join(EXAMPLES, 'analog-reference.SchDoc')
+        out = run('sch_inspect.py', real)
+        assert '元件 94 个' in out, out
+        assert '封装完整 0 / 94' in out, out
+        print('ok  sch_inspect：真实 AD 导出文件（94 元件）解析正常')
     finally:
         shutil.rmtree(tmp, ignore_errors=True)
     print('全部通过')

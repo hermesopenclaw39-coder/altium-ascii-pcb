@@ -141,7 +141,7 @@ On a GBK console (the default on Chinese Windows) run `set PYTHONIOENCODING=utf-
 
 Runs all four scripts against the minimal fixtures in `examples/` in a temp directory, then asserts that the batch footprint pass makes the schematic *complete* and that a second run does not insert duplicates.
 
-**Caveat:** the two files in `examples/` are hand-written minimal fixtures used to exercise the parsers. They are not guaranteed to open in AD — for real work, always export your own file with `File → Save As → Advanced Schematic ascii (*.SchDoc)`.
+**Caveat:** `examples/minimal.SchDoc` and `minimal.PcbDoc` are hand-written fixtures for the parsers and are not guaranteed to open in AD. `examples/analog-reference.SchDoc` is a **real Altium Designer 6.7 export** (94 components, name and student ID removed) — AD opens it normally, and the test suite parses it end to end. For your own boards, export with `File → Save As → Advanced Schematic ascii (*.SchDoc)`.
 
 ## Supported versions
 
